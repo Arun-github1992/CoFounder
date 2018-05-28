@@ -1,0 +1,57 @@
+
+  .nav-item:hover{
+    background-color:#dafdda;
+    cursor:pointer;
+  }
+  
+  
+  .tabHeading {
+      font-size : 24px;
+      font-weight:bold;
+      padding-top:12px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .nav-pills {
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 3;
+        border-bottom: 2px solid #7af396;
+        display:block;
+        top: 10%;
+        padding-right: 0;
+    }
+    .nav-pills div {
+        float:left;
+        height:72px;
+        /* padding-top:10px; */
+    }
+  
+    .nav-body-layout {
+      padding-top: 115px 50px 50px 50px;
+      /* background-image:url('/assets/images/lady_bg.jpg'); */
+      /* position: absolute; */
+      width: 100%;
+      background-color:#fff;
+    }
+  
+    .nav-pills .active {
+      color: #fff;
+      background-color: #66f75d;
+    }
+
+  }
+  @media screen and (max-width: 768px) {
+    .nav-pills {
+        display: none;
+    }
+  
+    .nav-body-layout {
+      /* background-image:url('/assets/images/lady_bg.jpg'); */
+      /* position: absolute; */
+      width: 100%;
+      background-color:#fff;
+    }
+
+  }

@@ -1,0 +1,20 @@
+<div>
+
+<table *ngIf="filteredList && isTablePage">
+  <th *ngFor="let heading of headings;">{{heading}}</th>
+  <tr *ngFor="let list of filteredList;let i=index" (click)="redirectToDetails(list)">
+    <td>{{i+1}}</td>
+    <td>{{list[0].firstName}} {{list[0].lastName}}</td>
+    <td [class.fail]="list[1].marks<35">{{list[1].marks}}</td>
+    <td [class.fail]="list[0].marks<40">{{list[0].marks}}</td>
+    <td [class.fail]="list[2].marks<40">{{list[2].marks}}</td>
+    <td [class.fail]="list[3].marks<35">{{list[3].marks}}</td>
+    <td>{{list[0].marks + list[1].marks + list[2].marks+list[3].marks}}</td>
+    <td>{{list.grade}}</td>
+  </tr>
+ 
+</table>
+<app-student-details *ngIf="!isTablePage" [details]="details"></app-student-details>
+
+
+</div>

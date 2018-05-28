@@ -1,0 +1,36 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- code for side navbar for mobile-->
+<!-- <div class="sidenav" [class.sidebar-width]="ismenuOpen === true">
+      <div *ngFor="let tab of sideNavTabs">
+            <div (click)="menuItemClick(tab)">{{tab.tabName}}</div>
+      </div>
+</div>
+<div class="sideMenubutton" [class.active]="ismenuOpen === true" id="btn" (click)="toggleNav()">
+      <div class="barOptions top" ></div>
+      <div class="barOptions middle"></div>
+      <div class="barOptions bottom"></div>
+</div>
+ 
+<div>
+      <div class="header-outer">
+            <app-header></app-header>
+      </div> 
+      <div class="home-layout">  
+            <app-body #bodyRef></app-body>
+      </div> 
+      <app-footer></app-footer>
+</div> -->
+
+<!-- Navigation -->
+
+<div class="header-outer">
+      <app-header></app-header>
+</div>
+
+<div class="landing-outer">
+      <router-outlet></router-outlet>
+</div>
+
+<div class="footer-outer">
+      <app-footer></app-footer>
+</div>

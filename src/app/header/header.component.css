@@ -1,0 +1,25 @@
+.header-layout {
+    text-align: center;
+    /* position: fixed; */
+    width: 100%;
+    z-index: 3;
+    height: 100px;
+    background-color:#419df3;
+    color:#fff;
+    /* box-shadow:0px 1px 13px 5px #419df3 */
+}
+@media screen and (min-width: 768px) {
+    .header-layout {
+        padding-top:0.5em;
+    }
+}
+@media screen and (max-width: 767px) {
+    .header-layout {
+         height: 60px;
+    }
+}
+.header-pane {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}

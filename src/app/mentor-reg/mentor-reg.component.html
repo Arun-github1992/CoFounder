@@ -1,0 +1,42 @@
+<div class="tab-pane active">
+    <div *ngIf="mentorFormDetails" class="form-heading">{{mentorFormDetails.formName}}</div>
+    <form class="form-horizontal" [formGroup]="signupForm" (ngSubmit)="submitForm(signupForm.value)">
+      <div class="layout" *ngFor="let field of mentorForm">
+        <div [ngSwitch]="field.type">
+          <mat-form-field *ngSwitchCase="'text'" class="form-group" [class.width-50]="field.layout==50" [class.width-100]="field.layout==100">
+            <input matInput placeholder="{{field.label}}" formControlName="{{field.id}}">
+          </mat-form-field>
+          <mat-form-field *ngSwitchCase="'textarea'" class="form-group" [class.width-50]="field.layout==50" [class.width-100]="field.layout==100">
+            <textarea matInput placeholder="Textarea" formControlName="{{field.id}}"></textarea>
+          </mat-form-field>
+          <mat-form-field *ngSwitchCase="'dropdown'" class="form-group" [class.width-50]="field.layout==50" [class.width-100]="field.layout==100">
+            <mat-select placeholder="{{field.label}}" formControlName="{{field.id}}">
+              <mat-option value="{{option.code}}" *ngFor="let option of field.optionValues">{{option.name}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div *ngSwitchCase="'radio'" class="form-group" [class.width-50]="field.layout==50" [class.width-100]="field.layout==100">
+            <div>{{field.label}}</div>
+            <mat-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason" formControlName="{{field.id}}">
+              <mat-radio-button class="example-radio-button" *ngFor="let item of field.optionValues" [value]="item.code">
+                {{item.name}}
+              </mat-radio-button>
+            </mat-radio-group>
+          </div>
+          <div *ngSwitchCase="'checkbox'" class="form-group" [class.width-50]="field.layout==50" [class.width-100]="field.layout==100">
+            <mat-checkbox>{{field.label}}</mat-checkbox>
+          </div>
+  
+          <div *ngSwitchCase="'file'" class="form-group" [class.width-50]="field.layout==50" [class.width-100]="field.layout==100">
+  
+            <div>{{field.label}}</div>
+            <input type="file" name="avatar" id="fileToUpload" class="width-100 border-grey" formControlName="{{field.id}}" (change)="fileUpload($event)">
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </form>
+  </div>

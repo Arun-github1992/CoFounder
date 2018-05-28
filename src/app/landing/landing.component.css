@@ -1,0 +1,142 @@
+.masthead{
+    background-image: url("./../../assets/images/green-bg.jpg");
+}
+
+.sec-or-text{
+    margin: 32px 0px;
+}
+
+.sec-arrow{
+    font-size:40px;
+    padding-top:5%;
+    text-align: center;
+    color: #15824e;
+    font-weight:bold;
+}
+.img-text{
+    padding: 5px;
+}
+
+.btn{
+    font-weight:bold;
+}
+
+.staffreghead{
+    background-image: url("./../../assets/images/green-bg.jpg");
+    /* background-color:blue; */
+}
+
+.p-b-15{
+    padding-bottom:15px;
+}
+
+@media screen and (min-width: 768px) {
+    .freelancer-outer {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    .sec-heading{
+        text-decoration: underline;
+        padding: 50px;
+        font-size: 30px;
+        text-decoration-color: #15824e;
+        color: #000;
+    }
+
+    .sec-tagline{
+        font-size:40px;
+        font-weight:bold;
+        padding:45px 280px;
+        text-align:center;
+    }
+
+    .sec-content{
+        padding:10px 150px;
+    }
+
+    .sec-buttons{
+        padding:60px 200px;
+    }
+    .btn-outline-success{
+        border: 4px solid #15824e;
+        height: 80px;
+    }
+    .btn-outline-light{
+        border: 4px solid #fff;
+        height: 80px;
+    }
+    .lg-container{
+        margin: 60px 150px;
+    }
+
+    .xs-container{
+        margin: 65px 315px;
+    }
+    .staff-btn-outer{
+        margin-left: 25%;
+    }
+    .send-txt-box{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .m-l-25{
+        margin-left: 25%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .freelancer-outer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .sec-heading{
+        text-decoration: underline;
+        padding: 30px;
+        font-size: 20px;
+        text-decoration-color: #15824e;
+        color: #000;
+    }
+
+    .sec-tagline{
+        font-size:30px;
+        font-weight:bold;
+        padding:30px 40px;
+        text-align:center;
+    }
+
+    .sec-content{
+        padding:5px 20px;
+    }
+
+    
+    .sec-buttons{
+        padding:35px 35px;
+    }
+
+    .btn-outline-success{
+        border: 4px solid #15824e;
+        height: 70px;
+    }
+    .btn-outline-light{
+        border: 4px solid #fff;
+        height: 70px;
+    }
+    .lg-container{
+        margin: 40px 50px;
+    }
+    .xs-container{
+        margin: 65px 50px;
+        padding:35px 0px;
+    
+    }
+
+    .send-txt-box{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .sec-arrow{
+        transform: rotate(90deg);
+    }
+}

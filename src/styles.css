@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+/* @import "~@angular/material/prebuilt-themes/purple-green.css";
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css"; */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/* @import "~@angular/material/prebuilt-themes/pink-bluegrey.css"; */
+
+
+.mat-form-field-label{
+    color:white;
+}
+.mat-form-field-underline{
+    background-color:rgb(220, 221, 219);;
+}
+
+
+
+
+
+
+
+
+/* On form field focus */
+.mat-focused .mat-form-field-label{
+    color:rgb(162, 235, 162);
+}
+
+.mat-focused .mat-input-element{
+    caret-color:green;
+    color:green;
+}
+.mat-form-field-ripple{
+    background-color:green;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+    border-color:green;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle{
+    background-color:green;
+}
+.mat-select-value{
+    color:green;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background{
+    background-color:green;
+}
+
+.mat-form-field-label{
+    font-size:28px;
+}

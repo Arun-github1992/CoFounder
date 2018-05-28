@@ -1,0 +1,87 @@
+{
+	"formName": "MENTOR REGISTRATION",
+	"formFields": [
+		{
+			"id": "name",
+			"label": "Name",
+			"placeholder": "John",
+			"type": "text",
+			"value": "",
+			"layout": "100"
+		},
+		{
+			"id": "email",
+			"label": "Email",
+			"placeholder": "John@gm.com",
+			"type": "text",
+			"value": "",
+			"layout": "100"
+		},
+		{
+			"id": "currentlevel",
+			"label": "Current Level",
+			"placeholder": "",
+			"type": "dropdown",
+			"optionValues": [
+				{
+					"code": "1",
+					"name": "fresher"
+				},
+				{
+					"code": "2",
+					"name": "mid level"
+				},
+				{
+					"code": "3",
+					"name": "senior level"
+				}
+			],
+			"value": "",
+			"layout": "100"
+		},
+		{
+			"id": "cmnts",
+			"label": "Additional comments",
+			"placeholder": "your comments",
+			"type": "textarea",
+			"value": "",
+			"layout": "100"
+		},
+		{
+			"id": "gender",
+			"label": "Gender",
+			"placeholder": "",
+			"type": "radio",
+			"value": "",
+			"optionValues": [
+				{
+					"code": "1",
+					"name": "Male"
+				},
+				{
+					"code": "2",
+					"name": "Female"
+				}
+			],
+			"layout": "50"
+		},
+		{
+			"id": "mentorRegAgree",
+			"label": "I agree to terms and conditions",
+			"placeholder": "",
+			"type": "checkbox",
+			"value": "",
+			"optionValues": [],
+			"layout": "100"
+		},
+		{
+			"id": "resume",
+			"label": "Resume",
+			"placeholder": "",
+			"type": "file",
+			"value": "",
+			"optionValues": [],
+			"layout": "100"
+		}
+	]
+}

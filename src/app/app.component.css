@@ -1,0 +1,136 @@
+
+.sideMenubutton {
+    position: fixed;
+    z-index: 20;
+    display: block;
+    padding: 15px;
+    padding-left: 10px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 18;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+}
+
+.sidenav div {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #419df3;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 40px;
+}
+
+.sidenav div:hover, .sidenav div:active {
+    color: #21027b;
+    cursor: pointer;
+}
+
+.sidenav {
+    padding-top: 70px;
+}
+
+
+/* } */
+
+.barOptions {
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: #fff;
+    margin: 5px 0px 6px 7px;
+}
+
+/* On clicking side menu bar*/
+
+.sideMenubutton.active .barOptions {
+    background-color: #419df3;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    -ms-transition: all .7s ease;
+    -o-transition: all .7s ease;
+    transition: all .7s ease;
+}
+
+.sideMenubutton.active .top {
+    -webkit-transform: translateY(10px) rotateZ(45deg);
+    -moz-transform: translateY(10px) rotateZ(45deg);
+    -ms-transform: translateY(10px) rotateZ(45deg);
+    -o-transform: translateY(10px) rotateZ(45deg);
+    transform: translateY(10px) rotateZ(45deg);
+}
+
+.sideMenubutton.active .bottom {
+    -webkit-transform: translateY(-6px) rotateZ(-45deg);
+    -moz-transform: translateY(-6px) rotateZ(-45deg);
+    -ms-transform: translateY(-6px) rotateZ(-45deg);
+    -o-transform: translateY(-6px) rotateZ(-45deg);
+    transform: translateY(-6px) rotateZ(-45deg);
+}
+
+.sideMenubutton.active .middle {
+    width: 0;
+}
+
+.width-0 {
+    width: 0px !important;
+}
+
+.header-outer {
+    height: 10%;
+    position:relative;
+}
+
+.home-layout {
+    font-size: 24px;
+    font-family: comic sans ms;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    overflow: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar-width {
+        width: 100% !important;
+    }
+
+    .landing-outer{
+        margin-top: 60px;
+        background-color: #d0f6f9;
+    }
+    .footer-outer{
+        margin-top: 60px;
+        background-color: #d0f6f9;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .sidebar-width {
+        width: 30% !important;
+    }
+
+    .sideMenubutton {
+        padding: 20px;
+    }
+    
+    .landing-outer{
+        margin-top: 75px;
+        background-color: #d0f6f9;
+    }
+
+    .footer-outer{
+        margin-top: 75px;
+        background-color: #d0f6f9;
+    }
+}
